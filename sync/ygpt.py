@@ -6,7 +6,7 @@ YANDEX_API_KEY = os.getenv('YANDEX_API_KEY')
 key = f"{FOLDER_ID}@{YANDEX_API_KEY}"
 
 # задайте адрес вашей прокси
-proxy_url = "https://openai2yandex-translator.vercel.app"
+proxy_url = "https://apps.llmplay.space/translator"
 
 # создайте клиент OpenAI с измененным base_url
 oai = openai.Client(api_key=key, base_url=f"{proxy_url}/v1/")
