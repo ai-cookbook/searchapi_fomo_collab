@@ -38,6 +38,7 @@ if __name__ == "__main__":
     
     try:
         result = get_generative_search_response(QUERY)
+        #print(result['links'])
         # Получаем генеративный ответ из результата
         if 'message' in result and 'content' in result['message']:
             print(result['message']['content'])
